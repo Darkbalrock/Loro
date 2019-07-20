@@ -22,7 +22,7 @@
     @csrf
     @method('PUT')
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12" style="display:none;">
         <strong>Id:</strong>
         <input type="number" name="id" class="form-control" value="{{$data->id}}"></input>
       </div>
