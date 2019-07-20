@@ -57,12 +57,12 @@ class usuariosLoroController extends Controller
 
     public function update(Request $request, $id){
         $data = usuariosLoro::where("id","=",$id)->first();
-        
+
         $this->validate(request(), [
             'nombres' => 'required',
             'apellidos' => 'required',
-            'cedula' => 'required|unique:usuarios_loros',
-            'correo' => 'required|email|unique:usuarios_loros',
+            'cedula' => 'required',
+            'correo' => 'required',
             'telefono' => 'required',
         ]);
 
